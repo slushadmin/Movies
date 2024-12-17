@@ -2,62 +2,61 @@ body {
   font-family: "Aldrich", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #000;
-  color: #fff;
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
 }
 .container {
-  max-width: 1200px; /* Increased from 800px */
+  max-width: 1000px; /* Set a maximum width */
   margin: 0 auto;
-  padding: 40px; /* Increased from 20px */
+  padding: 20px; /* Padding for container */
 }
 h1 {
   text-align: center;
-  color: #fff;
+  color: #fff; /* White text */
 }
 .search-container {
   display: flex;
-  margin-bottom: 30px; /* Increased from 20px */
+  margin-bottom: 20px; /* Space below search container */
 }
 input[type="text"] {
   flex-grow: 1;
-  padding: 15px; /* Increased from 10px */
-  font-size: 18px; /* Increased from 16px */
-  border: 2px solid white;
-  border-radius: 6px; /* Increased from 4px */
-  background-color: black;
-  color: white;
-  transition: border-color 0.3s ease;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid white; /* White border */
+  border-radius: 4px; /* Rounded corners */
+  background-color: black; /* Input background color */
+  color: white; /* Input text color */
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
 }
 input[type="text"]::placeholder {
-  color: #888;
-  font-family: "Aldrich", sans-serif;
+  color: #888; /* Placeholder color */
 }
 input[type="text"]:focus {
-  outline: none;
-  border-color: #9d00ff;
+  outline: none; /* Remove default outline */
+  border-color: #9d00ff; /* Change border color on focus */
 }
 button {
-  padding: 15px 30px; /* Increased from 10px 20px */
-  font-size: 18px; /* Increased from 16px */
-  background-color: black;
-  color: white;
-  border: 2px solid white;
-  border-radius: 6px; /* Increased from 4px */
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: black; /* Button background color */
+  color: white; /* Button text color */
+  border: 2px solid white; /* Button border color */
+  border-radius: 4px; /* Rounded corners */
   cursor: pointer;
   transition:
     background-color 0.3s ease,
-    color 0.3s ease;
-  margin-left: 15px; /* Increased from 10px */
+    color 0.3s ease; /* Smooth transition */
+    margin-left: 10px; /* Space between input and button */
 }
 button:hover {
-  background-color: #9d00ff;
+    background-color: #9d00ff; /* Button hover effect */
 }
 .iframe-container {
-  border: 3px solid white; /* Increased from 2px */
-  padding: 10px; /* Increased from 5px */
+    border: 2px solid white; /* White border around iframe */
+    padding: 5px; /* Padding between iframe and border */
 }
 iframe {
-  width: 100%;
-  height: 600px; /* Increased from 450px */
-  border: none;
+    width: calc(100% - 10px); /* Full width minus padding for the container */
+    height: 350px; /* Adjusted height to prevent scrolling */
+    border: none; /* Remove default iframe border */
 }
