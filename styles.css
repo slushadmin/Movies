@@ -1,62 +1,69 @@
+body, input, button {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-  font-family: "Open Sans", sans-serif; /* Use Open Sans font */
-  margin: 0;
-  padding: 0;
-  background-color: #000; /* Black background */
-  color: #fff; /* White text */
+    background-color: #000;
+    color: #fff;
 }
+
 .container {
-  max-width: 1200px; /* Set a maximum width */
-  margin: 0 auto; /* Center the container */
-  padding: 20px; /* Padding for container */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
-h1 {
-  text-align: center;
-  color: #fff; /* White text */
-}
+
 .search-container {
-  display: flex;
-  margin-bottom: 20px; /* Space below search container */
+    display: flex;
+    margin-bottom: 20px;
 }
+
 input[type="text"] {
-  flex-grow: 1;
-  padding: 10px;
-  font-size: 16px;
-  border: 2px solid white; /* White border */
-  border-radius: 4px; /* Rounded corners */
-  background-color: black; /* Input background color */
-  color: white; /* Input text color */
-  transition: border-color 0.3s ease; /* Smooth transition for border color */
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid white;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    transition: border-color 0.3s ease;
 }
+
 input[type="text"]::placeholder {
-  color: #888; /* Placeholder color */
+    color: #888;
+    font-family: 'Open Sans', sans-serif;
 }
+
 input[type="text"]:focus {
-  outline: none; /* Remove default outline */
-  border-color: #9d00ff; /* Change border color on focus */
+    outline: none;
+    border-color: #9d00ff;
 }
+
 button {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: black; /* Button background color */
-  color: white; /* Button text color */
-  border: 2px solid white; /* Button border color */
-  border-radius: 4px; /* Rounded corners */
-  cursor: pointer;
-  transition:
-    background-color 0.3s ease,
-    color 0.3s ease; /* Smooth transition */
-    margin-left: 10px; /* Space between input and button */
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left: 10px;
 }
+
 button:hover {
-    background-color: #9d00ff; /* Button hover effect */
+    background-color: #9d00ff;
 }
+
 .iframe-container {
-    border: 2px solid white; /* White border around iframe */
-    padding: 5px; /* Padding between iframe and border */
+    border: 2px solid white;
+    padding: 5px;
 }
+
 iframe {
-    width: calc(100% - 10px); /* Full width minus padding for the container */
-    height: 500px; /* Increased height for better visibility */
-    border: none; /* Remove default iframe border */
+    width: calc(100% - 10px);
+    height: 500px;
+    border: none;
 }
