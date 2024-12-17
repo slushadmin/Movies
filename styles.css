@@ -57,6 +57,6 @@ button:hover {
 }
 iframe {
     width: calc(100% - 10px); /* Full width minus padding for the container */
-    height: 350px; /* Adjusted height to prevent scrolling */
+    height: 500px; /* Increased height from previous value to make it taller */
     border: none; /* Remove default iframe border */
 }
