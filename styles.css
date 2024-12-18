@@ -26,7 +26,7 @@ body {
 }
 
 input[type="text"] {
-    width: calc(100% - 20px); /* Adjust width to account for padding */
+    width: calc(100% - 10px); /* Adjusted to match iframe width */
     padding: 10px 10px 10px 40px; /* Add padding for icon */
     font-size: 18px; /* Increase font size for better readability */
     border: 2px solid white; /* White border */
