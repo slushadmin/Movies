@@ -1,7 +1,23 @@
+body, input {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+}
+
 .container {
     max-width: 950px; /* Set a maximum width */
     margin: 0 auto; /* Center the container */
     padding: 20px; /* Padding for container */
+}
+
+.search-container {
+    display: flex;
+    margin-bottom: 20px; /* Space below search container */
 }
 
 .input-icon {
@@ -10,7 +26,7 @@
 }
 
 input[type="text"] {
-    width: calc(100% - 20px); /* Adjust width to account for padding */
+    width: calc(100% - 20px); /* Adjust width to align with iframe */
     padding: 10px 10px 10px 40px; /* Add padding for icon */
     font-size: 18px; /* Increase font size for better readability */
     border: 2px solid white; /* White border */
@@ -18,6 +34,25 @@ input[type="text"] {
     background-color: black; /* Input background color */
     color: white; /* Input text color */
     transition: border-color 0.3s ease; /* Smooth transition for border color */
+    margin: 0 auto; /* Center the input */
+}
+
+input[type="text"]::placeholder {
+    color: transparent; /* Hide placeholder text */
+}
+
+.search-icon {
+    position: absolute;
+    left: 10px; /* Position from left edge */
+    top: 40%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust vertical alignment */
+    color: white; /* Set icon color to white */
+    font-size: 30px; /* Increase size for better visibility */
+}
+
+input[type="text"]:focus {
+    outline: none; /* Remove default outline */
+    border-color: #9d00ff; /* Change border color on focus */
 }
 
 .iframe-container {
