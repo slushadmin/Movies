@@ -1,5 +1,4 @@
-const API_KEY =
-  "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIzYzMxNTBlMzkzMWI5ZTJmNTc2ZWQ3NjNhZjg5YjFiNiIsInN1YiI6IjY2MTU0ZDU4MDQ4NjM4MDE3YzFjNGQ2ZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.G70lSLnsxqaS4GgkMsfaT9BQQKTPsmja565xuxUg1P4";
+const API_KEY = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIzYzMxNTBlMzkzMWI5ZTJmNTc2ZWQ3NjNhZjg5YjFiNiIsInN1YiI6IjY2MTU0ZDU4MDQ4NjM4MDE3YzFjNGQ2ZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.G70lSLnsxqaS4GgkMsfaT9BQQKTPsmja565xuxUg1P4";
 
 async function searchMovie() {
   const movieTitle = document.getElementById("searchInput").value.trim();
@@ -41,3 +40,9 @@ function displayResult(embedUrl) {
     </div>
   `;
 }
+
+document.getElementById("searchInput").addEventListener("keyup", function(event) {
+  if (event.key === "Enter") {
+    searchMovie();
+  }
+});
