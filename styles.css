@@ -23,8 +23,8 @@ body {
 
 .input-icon {
     position: relative;
-    flex-grow: 1; /* Allow input to take available space */
-    max-width: 600px; /* Limit the maximum width */
+    width: 80%; /* Set width to 80% of the container */
+    max-width: 800px; /* Maximum width */
 }
 
 input[type="text"] {
@@ -36,6 +36,7 @@ input[type="text"] {
     background-color: black; /* Input background color */
     color: white; /* Input text color */
     transition: border-color 0.3s ease; /* Smooth transition for border color */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
 input[type="text"]::placeholder {
@@ -45,7 +46,7 @@ input[type="text"]::placeholder {
 .search-icon {
     position: absolute;
     left: 10px; /* Position from left edge */
-    top: 40%; /* Center vertically */
+    top: 50%; /* Center vertically */
     transform: translateY(-50%); /* Adjust vertical alignment */
     color: white; /* Set icon color to white */
     font-size: 30px; /* Increase size for better visibility */
@@ -56,13 +57,4 @@ input[type="text"]:focus {
     border-color: #9d00ff; 
 }
 
-.iframe-container {
-    border: none; 
-    padding: 0; 
-}
-
-iframe {
-    width: 100%; 
-    height: 480px; 
-    border: none; 
-}
+/* Rest of your CSS remains unchanged */
