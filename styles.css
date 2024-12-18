@@ -60,7 +60,8 @@ input[type="text"]:focus {
 }
 
 iframe {
-    width: 1100px; 
+    width: 100%; /* Changed to 100% for responsiveness */
+    max-width: 1100px; /* Maintain maximum width */
     height: 480px; 
     border: none; 
 }
