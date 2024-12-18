@@ -1,80 +1,47 @@
-body, input, button {
+body, input {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
 }
-
 body {
     background-color: #000;
     color: #fff;
 }
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
-
 .search-container {
     display: flex;
     margin-bottom: 20px;
 }
-
-.input-icon {
-    position: relative;
-    flex-grow: 1;
-}
-
-.search-icon {
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #888;
-    font-size: 20px; /* Adjust size as needed */
-    pointer-events: none; /* Ensures icon doesn't interfere with input */
-}
-
 input[type="text"] {
-    width: 100%;
-    padding-left: 35px; /* Space for the icon */
-    padding-top: 10px;
-    padding-bottom: 10px;
+    flex-grow: 1;
+    padding: 10px 10px 10px 40px;
     font-size: 16px;
     border: 2px solid white;
     border-radius: 4px;
     background-color: black;
     color: white;
+    transition: border-color 0.3s ease;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>');
+    background-repeat: no-repeat;
+    background-position: 10px center;
 }
-
+input[type="text"]::placeholder {
+    color: transparent;
+}
 input[type="text"]:focus {
     outline: none;
     border-color: #9d00ff;
 }
-
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: black;
-    color: white;
-    border: 2px solid white;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    margin-left: 10px;
-}
-
-button:hover {
-    background-color: #9d00ff;
-}
-
 .iframe-container {
     border: 2px solid white;
     padding: 5px;
 }
-
 iframe {
     width: calc(100% - 10px);
-    height: 500px;
+    height: 480px;
     border: none;
 }
