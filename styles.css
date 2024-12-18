@@ -10,7 +10,8 @@ body {
 }
 
 .container {
-    max-width: 950px; /* Set a maximum width */
+    max-width: 1200px; /* Increased maximum width */
+    width: 90%; /* Set width to 90% of the viewport */
     margin: 0 auto; /* Center the container */
     padding: 20px; /* Padding for container */
 }
@@ -18,16 +19,18 @@ body {
 .search-container {
     display: flex;
     margin-bottom: 20px; /* Space below search container */
+    justify-content: center; /* Center the search container */
 }
 
 .input-icon {
     position: relative;
-    flex-grow: 1; /* Allow input to take available space */
+    width: 100%; /* Make input container full width */
+    max-width: 800px; /* Set a maximum width for the input */
 }
 
 input[type="text"] {
     width: 100%; /* Make input full width */
-    padding: 10px 10px 10px 40px; /* Add padding for icon */
+    padding: 15px 15px 15px 50px; /* Increased padding for a taller input box */
     font-size: 18px; /* Increase font size for better readability */
     border: 2px solid white; /* White border */
     border-radius: 4px; /* Rounded corners */
@@ -42,8 +45,8 @@ input[type="text"]::placeholder {
 
 .search-icon {
     position: absolute;
-    left: 10px; /* Position from left edge */
-    top: 40%; /* Center vertically */
+    left: 15px; /* Adjusted position from left edge */
+    top: 50%; /* Center vertically */
     transform: translateY(-50%); /* Adjust vertical alignment */
     color: white; /* Set icon color to white */
     font-size: 30px; /* Increase size for better visibility */
@@ -60,7 +63,7 @@ input[type="text"]:focus {
 }
 
 iframe {
-    width: calc(100% - 10px); /* Full width minus padding for the container */
+    width: 100%; /* Full width */
     height: 480px; /* Increased height for better visibility */
     border: none; /* Remove default iframe border */
 }
