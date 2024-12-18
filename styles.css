@@ -50,17 +50,17 @@ input[type="text"]::placeholder {
 }
 
 input[type="text"]:focus {
-    outline: none; /* Remove default outline */
-    border-color: #9d00ff; /* Change border color on focus */
+    outline: none; 
+    border-color: #9d00ff; 
 }
 
 .iframe-container {
-    border: 2px solid white; /* White border around iframe */
-    padding: 5px; /* Padding between iframe and border */
+    border: 2px solid white; 
+    padding: 5px; 
 }
 
 iframe {
-    width: calc(100% - 10px); /* Full width minus padding for the container */
-    height: 480px; /* Increased height for better visibility */
-    border: none; /* Remove default iframe border */
+    width: 1100px; 
+    height: 480px; 
+    border: none; 
 }
