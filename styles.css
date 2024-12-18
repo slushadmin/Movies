@@ -22,13 +22,13 @@ body {
 
 .input-icon {
     position: relative;
-    flex-grow: 1;
+    flex-grow: 1; /* Allow input to take available space */
 }
 
 input[type="text"] {
-    flex-grow: 1;
+    width: 100%; /* Make input full width */
     padding: 10px 10px 10px 40px; /* Add padding for icon */
-    font-size: 16px; /* Font size for input text */
+    font-size: 18px; /* Increase font size for better readability */
     border: 2px solid white; /* White border */
     border-radius: 4px; /* Rounded corners */
     background-color: black; /* Input background color */
@@ -36,19 +36,17 @@ input[type="text"] {
     transition: border-color 0.3s ease; /* Smooth transition for border color */
 }
 
-/* Change placeholder to transparent to show the icon */
 input[type="text"]::placeholder {
     color: transparent; /* Hide placeholder text */
 }
 
-/* Style for the search icon */
 .search-icon {
     position: absolute;
     left: 10px; /* Position from left edge */
     top: 50%; /* Center vertically */
     transform: translateY(-50%); /* Adjust vertical alignment */
     color: white; /* Set icon color to white */
-    font-size: 24px; /* Increase size as needed */
+    font-size: 24px; /* Increase size for better visibility */
 }
 
 input[type="text"]:focus {
