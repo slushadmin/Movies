@@ -60,7 +60,7 @@ input[type="text"]:focus {
 }
 
 .iframe-container {
-    width: 96%; /* Original full-width container */
+    width: 98%; /* Original full-width container */
     display: flex; /* Use flexbox */
     justify-content: center; /* Center iframe horizontally */
     border: 3px solid #fff; /* Add white border */
@@ -68,7 +68,7 @@ input[type="text"]:focus {
 }
 
 iframe {
-    width: 96%; /* Match search bar width */
+    width: 98%; /* Match search bar width */
     max-width: 1080px; /* Match search bar max-width */
     height: 475px;
     border: none;
