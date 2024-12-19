@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-    max-width: 1100; /* Set a maximum width */
+    max-width: 1100px; /* Set a maximum width (added 'px' unit) */
     margin: 0 auto; /* Center the container */
     padding: 20px; /* Padding for container */
 }
@@ -25,7 +25,7 @@ body {
 .input-icon {
     position: relative;
     width: 90%; /* Set width to 90% of the container */
-    max-width: 1100px; /* Maximum width increased to 1000px */
+    max-width: 1100px; /* Maximum width */
 }
 
 input[type="text"] {
@@ -60,7 +60,9 @@ input[type="text"]:focus {
 }
 
 .iframe-container {
-    width: 100%;
+    width: 90%; /* Match the width of .input-icon */
+    max-width: 1100px; /* Match the max-width of .input-icon */
+    margin: 0 auto; /* Center the iframe container */
     border: 3px solid #fff; /* Add white border */
     padding: 5px; /* Optional: add some padding inside the border */
 }
