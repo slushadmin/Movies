@@ -61,16 +61,14 @@ input[type="text"]:focus {
 }
 
 .iframe-container {
-    width: 90%; /* Match the width of .input-icon */
-    max-width: 1100px; /* Match max-width of .input-icon */
-    margin: 0 auto; /* Center the iframe container */
-    border: 3px solid #fff;
-    box-sizing: border-box; /* Include border in width calculation */
+    width: 90%;          /* Match the width of .input-icon (90% of parent) */
+    max-width: 1100px;  /* Match max-width of .input-icon (1100px) */
+    margin: 0 auto;     /* Center the iframe container like .input-icon */
+    border: 3px solid #fff; /* Add white border around iframe container */
 }
 
 iframe {
-    width: 100%;
+    width: 100%;        /* Full width of its container (iframe-container) */
     height: 475px;
     border: none;
-    display: block; /* Remove any potential inline spacing */
 }
