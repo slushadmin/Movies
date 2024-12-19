@@ -68,7 +68,7 @@ input[type="text"]:focus {
 }
 
 iframe {
-    width: 90%; /* Match search bar width */
+    width: 100%; /* Match search bar width */
     max-width: 1100px; /* Match search bar max-width */
     height: 475px;
     border: none;
