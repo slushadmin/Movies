@@ -69,7 +69,7 @@ input[type="text"]:focus {
 
 iframe {
     width: 100%; /* Match search bar width */
-    max-width: 1090px; /* Match search bar max-width */
+    max-width: 1080px; /* Match search bar max-width */
     height: 475px;
     border: none;
 }
