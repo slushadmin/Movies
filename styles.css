@@ -61,8 +61,8 @@ input[type="text"]:focus {
 
 .iframe-container {
     width: 100%;
-    border: none;
-    padding: 0;
+    border: 3px solid #fff; /* Add white border */
+    padding: 5px; /* Optional: add some padding inside the border */
 }
 
 iframe {
