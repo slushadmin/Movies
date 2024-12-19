@@ -60,15 +60,16 @@ input[type="text"]:focus {
 }
 
 .iframe-container {
-    width: 90%; /* Match the width of .input-icon */
-    max-width: 1100px; /* Match max-width of .input-icon */
-    margin: 0 auto; /* Center the iframe container */
+    width: 100%; /* Original full-width container */
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center iframe horizontally */
     border: 3px solid #fff; /* Add white border */
-    box-sizing: border-box; /* Include border in width calculation */
+    padding: 5px; /* Optional padding */
 }
 
 iframe {
-    width: 100%;
+    width: 90%; /* Match search bar width */
+    max-width: 1100px; /* Match search bar max-width */
     height: 475px;
     border: none;
 }
