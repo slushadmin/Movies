@@ -19,6 +19,7 @@ body {
     display: flex;
     justify-content: center; /* Center the search bar */
     margin-bottom: 20px; /* Space below search container */
+    width: 100%; /* Ensure full width */
 }
 
 .input-icon {
@@ -31,16 +32,17 @@ input[type="text"] {
     width: 100%; /* Make input take full width of its container */
     padding: 10px 10px 10px 40px; /* Add padding for icon */
     font-size: 18px; /* Increase font size for better readability */
-    border: 2px solid white; /* White border */
+    border: 3px solid #fff; /* Increased border thickness and explicit white color */
     border-radius: 4px; /* Rounded corners */
-    background-color: black; /* Input background color */
-    color: white; /* Input text color */
+    background-color: #000; /* Black background to match body */
+    color: #fff; /* White text color */
     transition: border-color 0.3s ease; /* Smooth transition for border color */
     box-sizing: border-box; /* Include padding and border in element's total width and height */
+    outline: none; /* Remove default focus outline */
 }
 
 input[type="text"]::placeholder {
-    color: transparent; /* Hide placeholder text */
+    color: rgba(255,255,255,0.7); /* Slightly visible placeholder */
 }
 
 .search-icon {
@@ -49,19 +51,18 @@ input[type="text"]::placeholder {
     top: 50%; /* Center vertically */
     transform: translateY(-50%); /* Adjust vertical alignment */
     color: white; /* Set icon color to white */
-    font-size: 30px; /* Increase size for better visibility */
+    font-size: 24px; /* Adjust icon size */
+    z-index: 10; /* Ensure icon is above input */
 }
 
 input[type="text"]:focus {
-    outline: none; 
-    border-color: #9d00ff; /* Change border color on focus */
+    border-color: #9d00ff; /* Purple border on focus */
 }
 
-/* Ensure iframe styles remain unchanged */
-
 .iframe-container {
-    border: none; 
-    padding: 0; 
+    width: 100%;
+    border: none;
+    padding: 0;
 }
 
 iframe {
