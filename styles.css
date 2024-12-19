@@ -1,74 +1,63 @@
-body, input {
-    font-family: 'Open Sans', sans-serif;
-    margin: 0;
-    padding: 0;
+body,
+input {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
 }
-
 body {
-    background-color: #000; /* Black background */
-    color: #fff; /* White text */
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
 }
-
 .container {
-    max-width: 1100px; /* Set a maximum width (added 'px' unit) */
-    margin: 0 auto; /* Center the container */
-    padding: 20px; /* Padding for container */
+  max-width: 1100; /* Set a maximum width */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Padding for container */
 }
-
 .search-container {
-    display: flex;
-    justify-content: center; /* Center the search bar */
-    margin-bottom: 20px; /* Space below search container */
-    width: 100%; /* Ensure full width */
+  display: flex;
+  justify-content: center; /* Center the search bar */
+  margin-bottom: 20px; /* Space below search container */
+  width: 100%; /* Ensure full width */
 }
-
 .input-icon {
-    position: relative;
-    width: 90%; /* Set width to 90% of the container */
-    max-width: 1100px; /* Maximum width */
+  position: relative;
+  width: 90%; /* Set width to 90% of the container */
+  max-width: 1100px; /* Maximum width increased to 1000px */
 }
-
 input[type="text"] {
-    width: 100%; /* Make input take full width of its container */
-    padding: 10px 10px 10px 40px; /* Add padding for icon */
-    font-size: 18px; /* Increase font size for better readability */
-    border: 3px solid #fff; /* Increased border thickness and explicit white color */
-    border-radius: 4px; /* Rounded corners */
-    background-color: #000; /* Black background to match body */
-    color: #fff; /* White text color */
-    transition: border-color 0.3s ease; /* Smooth transition for border color */
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
-    outline: none; /* Remove default focus outline */
+  width: 100%; /* Make input take full width of its container */
+  padding: 10px 10px 10px 40px; /* Add padding for icon */
+  font-size: 18px; /* Increase font size for better readability */
+  border: 3px solid #fff; /* Increased border thickness and explicit white color */
+  border-radius: 4px; /* Rounded corners */
+  background-color: #000; /* Black background to match body */
+  color: #fff; /* White text color */
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  outline: none; /* Remove default focus outline */
 }
-
 input[type="text"]::placeholder {
-    color: rgba(255,255,255,0.7); /* Slightly visible placeholder */
+  color: rgba(255, 255, 255, 0.7); /* Slightly visible placeholder */
 }
-
 .search-icon {
-    position: absolute;
-    left: 10px; /* Position from left edge */
-    top: 45%; /* Center vertically */
-    transform: translateY(-50%); /* Adjust vertical alignment */
-    color: white; /* Set icon color to white */
-    font-size: 25px; /* Adjust icon size */
-    z-index: 10; /* Ensure icon is above input */
+  position: absolute;
+  left: 10px; /* Position from left edge */
+  top: 45%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust vertical alignment */
+  color: white; /* Set icon color to white */
+  font-size: 25px; /* Adjust icon size */
+  z-index: 10; /* Ensure icon is above input */
 }
-
 input[type="text"]:focus {
-    border-color: #9d00ff; /* Purple border on focus */
+  border-color: #9d00ff; /* Purple border on focus */
 }
-
 .iframe-container {
-    width: 90%; /* Match the width of .input-icon */
-    max-width: 1100px; /* Match the max-width of .input-icon */
-    margin: 0 auto; /* Center the iframe container */
-    border: 3px solid #fff; /* Add white border */
-    padding: 5px; /* Optional: add some padding inside the border */
+  width: 100%;
+  border: 3px solid #fff; /* Add white border */
+  padding: 5px; /* Optional: add some padding inside the border */
 }
-
 iframe {
-    width: 100%; 
-    height: 475px; 
-    border: none; 
+  width: 100%;
+  height: 475px;
+  border: none;
 }
