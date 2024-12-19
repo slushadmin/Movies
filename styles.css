@@ -24,7 +24,7 @@ body {
 
 .input-icon {
     position: relative;
-    width: 90%; /* Set width to 90% of the container */
+    width: 100%; /* Set width to 90% of the container */
     max-width: 1100px; /* Maximum width increased to 1100px */
 }
 
