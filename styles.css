@@ -48,7 +48,7 @@ input[type="text"]::placeholder {
 .search-icon {
     position: absolute;
     left: 10px; /* Position from left edge */
-    top: 50%; /* Center vertically */
+    top: 40%; /* Center vertically */
     transform: translateY(-50%); /* Adjust vertical alignment */
     color: white; /* Set icon color to white */
     font-size: 24px; /* Adjust icon size */
