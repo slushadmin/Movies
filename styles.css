@@ -1,4 +1,5 @@
-body, input {
+body,
+input {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
@@ -48,7 +49,7 @@ input[type="text"]::placeholder {
 .search-icon {
     position: absolute;
     left: 10px; /* Position from left edge */
-    top: 45%; /* Center vertically */
+    top: 50%; /* Center vertically */
     transform: translateY(-50%); /* Adjust vertical alignment */
     color: white; /* Set icon color to white */
     font-size: 25px; /* Adjust icon size */
@@ -59,6 +60,7 @@ input[type="text"]:focus {
     border-color: #9d00ff; /* Purple border on focus */
 }
 
+/* Iframe Container Styles */
 .iframe-container {
     width: 90%;          /* Match the width of .input-icon (90% of parent) */
     max-width: 1100px;  /* Match max-width of .input-icon (1100px) */
@@ -66,6 +68,7 @@ input[type="text"]:focus {
     border: 3px solid #fff; /* Add white border around iframe container */
 }
 
+/* Iframe Styles */
 iframe {
     width: 100%;        /* Full width of its container (iframe-container) */
     height: 475px;
