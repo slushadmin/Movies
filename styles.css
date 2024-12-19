@@ -54,10 +54,10 @@ input[type="text"]::placeholder {
 
 input[type="text"]:focus {
     outline: none; 
-    border-color: #9d00ff; 
+    border-color: #9d00ff; /* Change border color on focus */
 }
 
-/* Rest of your CSS remains unchanged */
+/* Ensure iframe styles remain unchanged */
 
 .iframe-container {
     border: none; 
