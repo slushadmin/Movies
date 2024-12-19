@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-    max-width: 1000; /* Set a maximum width */
+    max-width: 1100; /* Set a maximum width */
     margin: 0 auto; /* Center the container */
     padding: 20px; /* Padding for container */
 }
@@ -60,13 +60,13 @@ input[type="text"]:focus {
 }
 
 .iframe-container {
-    width: 100%;
+    width: 90%;
     border: 3px solid #fff; /* Add white border */
     padding: 5px; /* Optional: add some padding inside the border */
 }
 
 iframe {
-    width: 100%; 
+    width: 90%; 
     height: 475px; 
     border: none; 
 }
